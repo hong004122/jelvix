@@ -1,0 +1,536 @@
+*{
+    font-family: 'Gotham', sans-serif;
+}
+.floatCancel:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none; display: block;
+}
+
+
+@media screen and (max-width: 767px){
+    .hoverBtn{
+        overflow: hidden; height: 40px; text-align: center;
+        position: relative; top: 0; left: 0;
+        line-height: 40px; transition: line-height 0.3s ease-in-out;
+    }
+    .hoverBtn::after{
+        content: attr(data-text); text-align: center;
+        position: absolute; top: -80px; left: 0; transition-duration: 0.3s;
+        background-color: transparent;
+    }
+    .hoverBtn:hover{
+        line-height: 120px; height: 40px;
+    }
+    .hoverBtn:hover:after{
+        top: -40px;
+    }
+    .allWrap{
+        position: relative; overflow-x: hidden;
+    }
+    section[class*='Area']{
+        padding: 0 3%;
+    }
+    section[class*='Area']:not(.videoArea) > .wrap{
+        max-width: 650px; margin: 0 auto;
+    }
+    section[class*='Area']:not(.videoArea) h2{
+        font-size: 26px; line-height: 1.2;
+    }
+    header{
+        padding: 0 5%; position: absolute; left: 0; top: 0;
+        z-index: 10; width: 90%;
+    }
+    header.fixed{
+        position: fixed; background-color: #222; padding: 0 3% 0 2%;
+        width: 95%; z-index: 100;
+    }
+    header.mobNavBg{
+        background-color: #222;
+    }
+    header.fixed h1{
+        padding: 25px 0;
+    }
+    header.fixed h1 svg{
+        width: 80px;
+    }
+    header, header h1, header h1 svg, header nav ul li{
+        transition-duration: 0.2s;
+    }
+    header h1{
+        padding: 25px 0; float: left; width: 20%;
+    }
+    header h1 svg{
+        max-width: 83px;
+    }
+    header .mobileMenu{
+        padding: 25px 0; width: 70%; margin-left: 10%; float: left;
+        text-align: right;
+    }
+    header .mobileMenu button.mobileBtn{
+        margin-left: auto;  font-size: 30px;
+        border: none; position: relative; background-color: transparent;
+        color: white; cursor: pointer;
+    }
+    header nav:not(.active){
+        animation: navClose 0.75s ease-in-out;
+        /* animation-direction: reverse; */
+    }
+    header nav{
+        position: fixed; width: 100%; height: 0;
+        left: 0; 
+        overflow: hidden;
+    }
+    header nav.active{
+        display: block; top: 82px; height: 100%;
+        animation: navActive 0.75s ease-in-out;
+    }
+    /* header nav > button.mobileBtnClose{
+        display: none;
+    }
+    header nav.active > button.mobileBtnClose{
+        display: block; position: absolute; right: 4%; top: 25px;
+        border: none; color: white; background-color: transparent;
+        font-size: 30px;
+    } */
+    header nav ul{
+        padding: 65% 0; width: 100%; height: 100%;
+        background-color: #252525; box-sizing: border-box;
+    }
+    header nav ul li{
+        display: block; line-height: 20px; text-align: center;
+        width: 40%;  margin: 0 auto;
+    }
+    header nav ul li:nth-child(-n+2){
+        margin-bottom: 10px;
+    }
+    header nav ul li:nth-child(3){
+        margin-bottom: 20px;
+    }
+    header nav ul li a{
+        color: white; font-weight: 500; line-height: 50px;
+        font-size: 12px; overflow: hidden;
+        box-sizing: border-box;
+    }
+    header nav ul li a.hoverBtn{
+        padding: 0 30px; border: 1px solid #fff;
+    }
+    header nav ul li a.hoverBtn::after{
+        padding: 0 30px; width: 65%;
+    }
+    section.advantageArea > div > a.hoverBtn:hover{
+        background-color: #f2f2f2;
+    } 
+
+    .slideBtn{
+        width: 160px; line-height: 60px; padding: 0 20px;
+        text-align: center; z-index: 1000;
+    }
+    .slideBtn > *{
+        display: inline-block;
+    }
+    .slideBtn > button{
+        border: none; background-color: transparent;
+        position: relative; width: 50px; padding: 0;
+        cursor: pointer;
+    }
+    .slideBtn > button::before{
+        content: ''; transition: width 0.5s;
+        background-color: #000; width: 30px; height: 1px;
+        position: absolute; top: calc(50% - 0.4px);
+    }
+    .slideBtn > button:hover::before{
+        width: 40px;
+    }
+    .slideBtn > button:first-child::before{
+        left: 1px;
+    }
+    .slideBtn > button:first-child span{
+        text-align: left;
+    }
+    .slideBtn > button span{
+        line-height: 60px; display: block; font-size: 16px; width: 50px;
+    }
+    .slideBtn > span{
+        font-size: 14px;
+    }
+    .slideBtn > span:first-of-type,
+    .slideBtn > button:last-child{
+        margin-left: 5px;
+    }
+    .slideBtn > span:nth-of-type(2){
+        margin-left: 3px;
+    }
+    .slideBtn > button:last-child:before{
+        right: 1px;
+    }
+    .slideBtn > button:last-child span{
+        text-align: right;
+    }
+    /*  ? slideBtn fin */
+
+    footer{
+         padding: 15px 3%; text-align: center;
+    }
+    footer p{
+        font-size: 12px; margin-bottom: 20px;
+    }
+    footer ul{
+        margin-bottom: 20px;
+    }
+    footer ul li{
+        display: inline-block;
+    }
+    footer ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer ul li a{
+        color: black; font-size: 22px;
+    }
+    footer > a{
+        font-size: 12px; text-align: center; color: #252525;
+        
+    }
+
+    @keyframes navActive{
+        0%{
+            display: block; height: 0;
+        }
+        100%{
+            height: calc(100% - 82px);
+        }
+    }
+    
+    @keyframes navClose{
+        0%{
+            height: calc(100% - 82px); display: block;
+            top: 82px;
+        }
+        90%{
+            display: block; height: 0; top: 82px;
+        }
+        100%{
+            display: none; top: 0;
+        }
+    }
+}
+/*  * mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1004px){
+    .hoverBtn{
+        overflow: hidden; height: 50px; text-align: center;
+        position: relative; top: 0; left: 0;
+        line-height: 50px; transition: line-height 0.3s ease-in-out;
+    }
+    .hoverBtn::after{
+        content: attr(data-text); text-align: center;
+        position: absolute; top: -100px; left: 0; transition-duration: 0.3s;
+        background-color: transparent;
+    }
+    .hoverBtn:hover{
+        line-height: 150px; height: 50px;
+    }
+    .hoverBtn:hover:after{
+        top: -50px;
+    }
+    
+    .allWrap{
+        position: relative; overflow-x: hidden;
+    }
+    section[class*='Area']{
+        padding: 0 2%;
+    }
+    section[class*='Area']:not(.videoArea) > .wrap{
+        max-width: 950px; margin: 0 auto;
+    }
+    section[class*='Area']:not(.videoArea) h2{
+        font-size: 32px; line-height: 1.2;
+    }
+    header{
+        padding: 0 3%; position: absolute; left: 0; top: 0;
+        z-index: 10; width: 94%;
+    }
+    header, header h1, header h1 svg, header nav ul li{
+        transition-duration: 0.2s;
+    }
+    header h1{
+        float: left; width: 20%; padding: 35px 0;
+    }
+    header button.mobileBtn{
+        display: none;
+    }
+    header nav{
+        float: right; width: 80%;
+    }
+    header nav ul{
+        text-align: right;
+    }
+    header nav ul li{
+        display: inline-block; padding: 25px 0;
+    }
+    header nav ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    header nav ul li a{
+        color: white; font-weight: 500; line-height: 50px;
+        font-size: 14px; overflow: hidden;
+        box-sizing: border-box;
+    }
+    header nav ul li a.hoverBtn{
+        background-color: white; color: black; padding: 0 30px; 
+    }
+    header nav ul li a.hoverBtn::after{
+        padding: 0 30px;
+    }
+    header nav ul li:hover a.hoverBtn,
+    section.advantageArea > div > a.hoverBtn:hover{
+        background-color: #f2f2f2;
+    } 
+    header.fixed{
+        position: fixed; background-color: #222; padding: 0 3% 0 2%;
+        width: 94%; z-index: 100;
+    }
+    header.fixed h1{
+        padding: 25px 0;
+    }
+    header.fixed h1 svg{
+        width: 80px;
+    }
+    header.fixed nav ul li{
+        padding: 15px 0;
+    }
+
+    .slideBtn{
+        width: 160px; line-height: 60px; padding: 0 20px;
+        text-align: center; z-index: 1000;
+    }
+    .slideBtn > *{
+        display: inline-block;
+    }
+    .slideBtn > button{
+        border: none; background-color: transparent;
+        position: relative; width: 50px; padding: 0;
+        cursor: pointer;
+    }
+    .slideBtn > button::before{
+        content: ''; transition: width 0.5s;
+        background-color: #000; width: 30px; height: 1px;
+        position: absolute; top: calc(50% - 0.4px);
+    }
+    .slideBtn > button:hover::before{
+        width: 40px;
+    }
+    .slideBtn > button:first-child::before{
+        left: 1px;
+    }
+    .slideBtn > button:first-child span{
+        text-align: left;
+    }
+    .slideBtn > button span{
+        line-height: 60px; display: block; font-size: 16px; width: 50px;
+    }
+    .slideBtn > span{
+        font-size: 14px;
+    }
+    .slideBtn > span:first-of-type,
+    .slideBtn > button:last-child{
+        margin-left: 5px;
+    }
+    .slideBtn > span:nth-of-type(2){
+        margin-left: 3px;
+    }
+    .slideBtn > button:last-child:before{
+        right: 1px;
+    }
+    .slideBtn > button:last-child span{
+        text-align: right;
+    }
+    /*  ? slideBtn fin */
+
+    footer{
+         line-height: 50px; padding: 15px 3%;
+    }
+    footer > *{
+        float: left;
+    }
+    footer p{
+        font-size: 12px; width: 30%;
+    }
+    footer ul{
+        width: 40%; text-align: center;
+    }
+    footer ul li{
+        display: inline-block;
+    }
+    footer ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer ul li a{
+        color: black; font-size: 22px;
+    }
+    footer > a{
+        font-size: 12px; text-align: right; color: #252525;
+        width: 30%;
+    }
+}
+/*  * tablet */
+
+@media screen and (min-width: 1005px){
+    .hoverBtn{
+        overflow: hidden; height: 50px; text-align: center;
+        position: relative; top: 0; left: 0;
+        line-height: 50px; transition: line-height 0.3s ease-in-out;
+    }
+    .hoverBtn::after{
+        content: attr(data-text); text-align: center;
+        position: absolute; top: -100px; left: 0; transition-duration: 0.3s;
+        background-color: transparent;
+    }
+    .hoverBtn:hover{
+        line-height: 150px; height: 50px;
+    }
+    .hoverBtn:hover:after{
+        top: -50px;
+    }
+    .allWrap{
+        position: relative; overflow-x: hidden;
+    }
+    section[class*='Area']{
+        padding: 0 3%;
+    }
+    section[class*='Area']:not(.videoArea) > .wrap{
+        max-width: 1440px; margin: 0 auto;
+    }
+    section[class*='Area']:not(.videoArea) h2{
+        font-size: 44px; line-height: 1.46;
+    }
+    header{
+        padding: 0 3%; position: absolute; left: 0; top: 0;
+        z-index: 10; width: 94%;
+    }
+    header, header h1, header h1 svg, header nav ul li{
+        transition-duration: 0.2s;
+    }
+    header h1{
+        float: left; width: 20%; padding: 35px 0;
+    }
+    header button.mobileBtn{
+        display: none;
+    }
+    header nav{
+        float: right; width: 80%;
+    }
+    header nav ul{
+        text-align: right;
+    }
+    header nav ul li{
+        display: inline-block; padding: 25px 0;
+    }
+    header nav ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    header nav ul li a{
+        color: white; font-weight: 700; line-height: 50px;
+        font-size: 14px; padding: 0 30px; overflow: hidden;
+    }
+    header nav ul li a.hoverBtn{
+        background-color: white; color: black;
+    }
+    header nav ul li a.hoverBtn::after{
+        padding: 0 30px;
+    }
+    header nav ul li:hover a.hoverBtn,
+    section.advantageArea > div > a.hoverBtn:hover{
+        background-color: #f2f2f2;
+    } 
+    header.fixed{
+        position: fixed; background-color: #222; padding: 0 3% 0 2%;
+        width: 95%;
+    }
+    header.fixed h1{
+        padding: 25px 0;
+    }
+    header.fixed h1 svg{
+        width: 80px;
+    }
+    header.fixed nav ul li{
+        padding: 15px 0;
+    }
+
+    .slideBtn{
+        width: 160px; line-height: 80px; padding: 0 20px;
+        text-align: center; z-index: 1000;
+    }
+    .slideBtn > *{
+        display: inline-block;
+    }
+    .slideBtn > button{
+        border: none; background-color: transparent;
+        position: relative; width: 50px; padding: 0;
+        cursor: pointer;
+    }
+    .slideBtn > button::before{
+        content: ''; transition: width 0.5s;
+        background-color: #000; width: 30px; height: 1px;
+        position: absolute; top: calc(50% - 0.4px);
+    }
+    .slideBtn > button:hover::before{
+        width: 40px;
+    }
+    .slideBtn > button:first-child::before{
+        left: 1px;
+    }
+    .slideBtn > button:first-child span{
+        text-align: left;
+    }
+    .slideBtn > button span{
+        line-height: 80px; display: block; font-size: 16px; width: 50px;
+    }
+    .slideBtn > span{
+        font-size: 14px;
+    }
+    .slideBtn > span:first-of-type,
+    .slideBtn > button:last-child{
+        margin-left: 5px;
+    }
+    .slideBtn > span:nth-of-type(2){
+        margin-left: 3px;
+    }
+    .slideBtn > button:last-child:before{
+        right: 1px;
+    }
+    .slideBtn > button:last-child span{
+        text-align: right;
+    }
+    /*  ? slideBtn fin */
+
+    footer{
+         line-height: 50px; padding: 15px 3%;
+    }
+    footer > *{
+        float: left;
+    }
+    footer p{
+        font-size: 12px; width: 25%;
+    }
+    footer ul{
+        width: 50%; text-align: center;
+    }
+    footer ul li{
+        display: inline-block;
+    }
+    footer ul li:not(:first-child){
+        margin-left: 25px;
+    }
+    footer ul li a{
+        color: black; font-size: 22px;
+    }
+    footer > a{
+        font-size: 12px; text-align: right; color: #252525;
+        width: 25%;
+    }
+}
+/*  * desktop */

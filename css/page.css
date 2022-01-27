@@ -1,0 +1,2421 @@
+
+
+
+@media screen and (max-width: 767px){
+    section.videoArea{
+        width: 100%; padding-top: 720px;
+    }
+    section.videoArea video{
+        position: absolute; left: 0; top: 0; width: 100%; z-index: -1;
+        width: 1279px; height: 720px;
+    }
+    section.videoArea > div{
+        position: absolute; left: 0; top: 0; background-color: rgba(30,30,30,0.7);
+        width: 100%; height: 720px;
+    }
+    section.videoArea > div div{
+        max-width: 1279px; margin: 0 auto; position: relative;
+        
+    }
+    section.videoArea > div div > *{
+        color: white; position: absolute; left: 3%;
+    }
+    section.videoArea > div div h2{
+        top: 28vh; max-width: 275px; margin: 0 auto;
+        padding-right: 5%; box-sizing: border-box;
+        animation: videoH2Ani 0.5s ease-in-out;
+        font-size: 26px; line-height: 1.193;
+    }
+    section.videoArea > div div a{
+        top: 65vh; background-color: #3f60fa; font-weight: 700;
+        font-size: 12px; line-height: 40px; text-align: center;
+        min-width: 150px;
+        animation: videoBtnAni 0.5s ease-in-out;
+    }
+    section.videoArea > div div a:hover{
+        background-color: #2642f9;
+    }
+    section.videoArea > div div a:after{
+        min-width: 150px;
+    }
+    /* ? videoArea fin */
+    
+    section.setupArea{
+        background-color: #3f60fa; color: white;
+    }
+    section.setupArea *{
+        opacity: 0;
+    }
+    section.setupArea.active *{
+        opacity: 1;
+        animation: vertiAni 0.5s ease-in-out;
+    }
+    section.setupArea > div{
+        padding: 70px 0 90px;
+    }
+    section.setupArea > div h2{
+        width: 80%; box-sizing: border-box;
+        max-width: 570px; padding: 0 2%; margin-bottom: 20px;
+    }
+    section.setupArea > div p{
+        font-size: 14px; width: 80%; padding-top: 15px;
+        line-height: 22px; max-width: 570px; margin-left: 3%;
+    }
+    /*  ? setupArea fin */
+    
+    section.weWorkArea{
+        padding-top: 240px;
+        position: relative;
+    }
+    section.weWorkArea *:not(li){
+        opacity: 0;
+    }
+    section.weWorkArea.active *:not(li){
+        opacity: 1;
+    }
+    section.weWorkArea > div h2{
+        margin-bottom: 15px; animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div p{
+        font-size: 14px; line-height: 22px; margin-bottom: 30px;
+        animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div ul{
+        width: 100%; position: relative; z-index: 10; padding-bottom: 50px;
+    }
+    section.weWorkArea > div ul.active li{
+        animation: bgAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.weWorkArea > div ul li{
+        display: block; float: left; width: 49%; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        background-size: 70%; padding: 15% 0 0;
+        opacity: 0;
+    }
+    section.weWorkArea > div ul li:not(:nth-last-child(-n+2)){
+        margin-bottom: 50px;
+    }
+    section.weWorkArea > div ul li:nth-child(2n){
+        margin-left: 2%;
+    }
+    section.weWorkArea > div ul li:nth-child(1){
+        background-image: url('../images/logo_Samsung.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(2){
+        background-image: url('../images/logo_kia.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(3){
+        background-image: url('../images/logo_Zeiss.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(4){
+        background-image: url('../images/logo_ikea.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(5){
+        background-image: url('../images/logo_Louis_Vuitton.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(6){
+        background-image: url('../images/logo_auchan.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(7){
+        background-image: url('../images/logo_canon.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(8){
+        background-image: url('../images/logo_Stihl.svg');
+    }
+    section.weWorkArea > div .imgBox{
+        width: 94%; position: absolute; left: 3%; top: -50px;
+        z-index: 1; max-width: 940px; max-height: 263px; height: 35%;
+        overflow: hidden; background-color: #000;
+    }
+    section.weWorkArea.active > div .imgBox{
+        animation-delay: 0.75s;
+        animation: horiAni 1s ease-in-out;
+    }
+    section.weWorkArea.active > div .imgBox img{
+        animation-delay: 2s; width: 100%;
+        animation: horiTransAni 1.8s ease-in-out;
+    }
+    /*  ? weWorkArea fin */
+
+    section.howWorkArea{
+        background-color: #efefef;  position: relative;
+        padding-top: 50px; padding-bottom: 50px;
+    }
+    section.howWorkArea h2,
+    section.howWorkArea p,
+    section.howWorkArea ul li > span *{
+        opacity: 0;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        opacity: 1;
+    }
+    section.howWorkArea > div h2{
+        margin-bottom: 15px;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        animation: vertiAni 0.75s ease-in-out;
+    }
+    section.howWorkArea > div > p{
+        font-size: 14px; max-width: 450px;
+        line-height: 22px; margin-bottom: 35px;
+    }
+    section.howWorkArea > div ul{
+        border-left: 2px solid #000; 
+    }
+    section.howWorkArea > div ul li{
+        display: block; position: relative;
+        padding: 0 20px;  box-sizing: border-box;
+    }
+    section.howWorkArea > div ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    section.howWorkArea > div ul li::before{
+        content: ''; width: 112px; height: 10px; background-color: #dbdbdb;
+        display: block; position: relative; top: 10px; left: 0; 
+        z-index: -1;
+    }
+    section.howWorkArea > div ul li::after{
+        content: ''; width: 10px; height: 10px; background-color: #000;
+        display: block; position: absolute; top: 20px; left: -11px;
+    }
+    section.howWorkArea > div ul li > span,
+    section.howWorkArea > div ul li > span *{
+        display: block;
+    }
+    section.howWorkArea > div ul li > span{
+        overflow: hidden;
+    }
+    section.howWorkArea > div ul li > span strong{
+        font-size: 38px; margin-bottom: 5px;
+    }
+    section.howWorkArea > div ul li > span span{
+        line-height: 20px; font-size: 14px;
+    }
+    section.howWorkArea > div ul.active li > span *{
+        width: 100%; opacity: 1;
+        animation: horiLeftTransAni 1s ease-in-out;
+    }
+    /*  ? howWorkArea fin */
+
+    section.takeCareArea{
+        background-color: #252525; padding-top: 80px; padding-bottom: 200px;
+        color: white;
+    }
+    section.takeCareArea h2{
+        margin-bottom: 55px;
+        opacity: 0;
+    }
+    section.takeCareArea.active h2{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.takeCareArea ul li{
+        display: block;
+    }
+    section.takeCareArea ul li:not(:nth-last-child(1)){
+        margin-bottom: 20px;
+    }
+    section.takeCareArea ul li:after{
+        content: ''; display: block; clear: both;
+    }
+    section.takeCareArea ul li span{
+        float: left; display: block;
+    }
+    section.takeCareArea ul li span:first-child{
+        background-size: 50%; background-repeat: no-repeat;
+        background-position: center; text-indent: -9999px;
+        background-color: white; min-width: 80px; width: 9vw;
+        min-height: 80px; line-height: 9vw;
+    }
+    section.takeCareArea ul li:nth-child(1) span:first-child{
+        background-image: url('../images/icon-1.svg');
+    }    
+    section.takeCareArea ul li:nth-child(2) span:first-child{
+        background-image: url('../images/icon-2.svg');
+    }
+    section.takeCareArea ul li:nth-child(3) span:first-child{
+        background-image: url('../images/icon-3.svg');
+    }
+    section.takeCareArea ul li:nth-child(4) span:first-child{
+        background-image: url('../images/icon-4.svg');
+    }
+    section.takeCareArea ul li:nth-child(5) span:first-child{
+        background-image: url('../images/icon-5.svg');
+    }
+    section.takeCareArea ul li:nth-child(6) span:first-child{
+        background-image: url('../images/icon-6.svg');
+    }
+    section.takeCareArea ul li:nth-child(7) span:first-child{
+        background-image: url('../images/icon-7.svg');
+    }
+    section.takeCareArea ul li:nth-child(8) span:first-child{
+        background-image: url('../images/icon-8.svg');
+    }
+    section.takeCareArea ul li:nth-child(9) span:first-child{
+        background-image: url('../images/icon-9.svg');
+    }
+    section.takeCareArea ul li span:last-child{
+        font-weight: 500; margin-left: 5%;
+        line-height: 9vw; overflow: hidden; opacity: 0;
+        font-size: 14px; width: 60%;
+    }
+    section.takeCareArea ul li span.active{
+        opacity: 1;
+        animation: horiLeftTransAni 0.75s ease-in-out;
+    }
+    /*  ? takeCareArea fin */
+
+    section.advantageArea{
+        position: relative; max-width: 650px; margin: 0 auto;
+        height: 1px;
+    }
+    section.advantageArea div *{
+        opacity: 0;
+    }
+    section.advantageArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.advantageArea > div{
+        position: absolute; left:0; top: -130px; width: 96%;
+        text-align: center; padding: 30px 2% 40px; 
+        background: url('../images/highlight-bg.jpg') no-repeat left top / cover;
+        
+    }
+    section.advantageArea > div h3{
+        font-size: 22px; color: white; line-height: 28px;
+        margin-bottom: 25px;
+    }
+    section.advantageArea > div > a.hoverBtn{
+        background-color: white; max-width: 180px; color: #000;
+        margin: 0 auto; font-size: 14px; font-weight: 500;
+    }
+    section.advantageArea > div > a.hoverBtn:after{
+        max-width: 180px; width: 100%;
+    }
+    /*  ? advantageArea fin */
+
+    section.benefitsArea{
+        background-color: #efefef; padding: 150px 0 100px;
+    }
+    section.benefitsArea h2{
+        margin: 0 auto 50px; padding-left: 3%; max-width: 1440px;
+        opacity: 0; font-size: 32px !important;
+    }
+    section.benefitsArea h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li{
+        position: relative; display: block; min-height: 200px;
+        max-height: 250px; height: 21vw; 
+    }
+    section.benefitsArea ul li:not(:last-child){
+        margin-bottom: 100px;
+    }
+    section.benefitsArea ul li figure .imgBox{
+        width: 100%; min-height: 200px; max-height: 250px; height: 21vw;
+        overflow: hidden;
+    }
+    section.benefitsArea ul li figure .imgBox img{
+        width: 100%; height: 100%; opacity: 0;
+    }
+    section.benefitsArea ul li.active figure .imgBox img{
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure img{
+        animation: horiLeftTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure img{
+        animation: horiTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li figure figcaption{
+        position: absolute; background-color: white; width: 94%;
+        top: 20vw; max-width: 770px; opacity: 0; left: 3%;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure figcaption{
+        animation: benefitLeftTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure figcaption{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li figure figcaption dl{
+        padding: 20px 5%;
+    }
+    section.benefitsArea ul li figure figcaption dl dt{
+        font-weight: 700; font-size: 15px; margin-bottom: 10px;
+    }
+    section.benefitsArea ul li figure figcaption dl dd{
+        font-size: 14px; line-height: 23px;
+    }
+    /*  ? benefitsArea fin */
+    
+    .awardArea{
+        background-color: #3f60fA; padding: 30px 0; opacity: 0;
+    }
+    .awardArea.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    .awardArea div{
+        max-width: 950px; margin: 0 auto;
+    }
+    .awardArea div ul li{
+        display: block; width: 33.33%; float: left; text-indent: -9999px;
+        line-height: 70px; background-position: center; background-repeat: no-repeat;
+        background-size: 45%; padding: 25px 0;
+    }
+    .awardArea div ul li:nth-child(1){background-image: url('../images/award-1.svg');}
+    .awardArea div ul li:nth-child(2){background-image: url('../images/award-2.svg');}
+    .awardArea div ul li:nth-child(3){background-image: url('../images/award-3.svg');}
+    .awardArea div ul li:nth-child(4){background-image: url('../images/award-4.svg');}
+    .awardArea div ul li:nth-child(5){background-image: url('../images/award-5.svg');}
+    .awardArea div ul li:nth-child(6){background-image: url('../images/award-6.svg');}
+    /*  ? awardArea fin */
+
+    section.ddtCaseArea{
+        background-color: #252525; color: white;
+        padding-top: 40px; padding-bottom: 40px;
+    }
+    section.ddtCaseArea div *{
+        opacity: 0;
+    }
+    section.ddtCaseArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.ddtCaseArea div h2{
+        margin-bottom: 30px;
+    }
+    section.ddtCaseArea div p{
+        font-size: 14px; line-height: 20px; max-width: 810px;
+    }
+    /*  ? ddtCaseArea fin */
+
+    section.auchanArea{
+        position: relative; background-color: #f2f2f2;
+        padding: 0;
+    }
+    section.auchanArea ul{
+        height: 900px;
+    }
+    section.auchanArea ul li{
+        display: block; position: relative;
+        background-color: white; box-sizing: border-box;
+        opacity: 0;
+    }
+    section.auchanArea ul li:first-child{
+        height: 300px;
+    }
+    section.auchanArea.active ul li:first-child{
+        animation: horiTransAni 1s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child{
+        width: 98%; margin-left: auto;
+    }
+    section.auchanArea.active ul li:last-child{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1; top: 0;
+    }
+    section.auchanArea ul li div{
+        position: absolute;
+    }
+    section.auchanArea ul li:first-child div{
+        width: 100%; right: 0; top: 0; overflow: hidden;
+        background-color: #f2f2f2; height: 300px;
+    }
+    section.auchanArea ul li:first-child div.active{
+        z-index: 2;
+    }
+    section.auchanArea ul li:first-child div.active img{
+        animation: horiTransAni 0.75s ease-in-out;
+    }
+    section.auchanArea ul li:first-child div img{
+        width: 180%; 
+    }
+    section.auchanArea ul li:last-child div{
+        width: 90%; background-color: white;
+        padding: 60px 5%;
+        z-index: 10;
+    }
+    section.auchanArea ul li:last-child div.active{
+        z-index: 20;
+    }
+    section.auchanArea ul li:last-child div *{
+        opacity: 0; 
+    }
+    section.auchanArea ul li:last-child div.active *{
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child div h3{
+        font-size: 32px; margin-bottom: 30px;
+    }
+    section.auchanArea ul li:last-child div p{
+        font-size: 12px; line-height: 18px; color: #252525;
+    }
+    section.auchanArea ul li:last-child div p:not(:last-child){
+        margin-bottom: 15px;
+    }
+    section.auchanArea .slideBtn{
+        background-color: #000; position: absolute;
+        top: 270px; right: 0;
+    }
+    section.auchanArea .slideBtn *{
+        color: white;
+    }
+    section.auchanArea .slideBtn button::before{
+        background-color: white;
+    }
+    /*  ? auchanArea fin */
+
+    section.clientArea{
+        position: relative; background-color: #f2f2f2;
+        padding: 0;
+    }
+    section.clientArea > .hBox{
+        background-color: #252525; color: white; 
+        padding: 35px 0 25px 3%;
+        width: 97%; box-sizing: border-box;
+    }
+    section.clientArea > .hBox h2{
+        max-width: 110px; opacity: 0;
+    }
+    section.clientArea > .hBox h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1; 
+    }
+    section.clientArea .slideBox ul{
+        position: relative; height: 450px; padding-bottom: 80px;
+        background-color: white;
+
+    }
+    section.clientArea .slideBox ul li{
+        position: absolute; background-color: #fff;
+        display: block; width: 100%; box-sizing: border-box;
+        padding: 50px 5% 0; height: 500px;
+    }
+    section.clientArea .slideBox ul li{
+        z-index: 1; opacity: 0;
+    }
+    section.clientArea .slideBox ul li.active{
+        z-index: 10; opacity: 1;
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+    }
+    section.clientArea .slideBox ul li h3{
+        font-size: 24px; font-weight: 500; margin-bottom: 15px;
+    }
+    section.clientArea .slideBox ul li strong{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.clientArea .slideBox ul li strong,
+    section.clientArea .slideBox ul li small{
+        display: block; font-size: 14px;
+    }
+    section.clientArea .slideBox ul li small{
+        color: #9c9c9c; margin-bottom: 100px;
+    }
+    section.clientArea .slideBox ul li p{
+        color: #252525; font-size: 12px; line-height: 18px;
+    }
+    section.clientArea .slideBox > ul li a{
+        position: absolute; left: 5%; top: 150px;
+        background-repeat: no-repeat; background-size: contain;
+        background-position: center; width: 127px; line-height: 70px;
+        text-indent: -9999px;
+    }
+    section.clientArea .slideBox ul li:nth-child(1) a{
+        background-image: url('../images/logo_auchan.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(2) a{
+        background-image: url('../images/logo_switchback.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(3) a{
+        background-image: url('../images/logo_vista.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(4) a{
+        background-image: url('../images/logo_appyventures.webp');
+    }
+    section.clientArea .slideBtn{
+        position: absolute; left: 32%; bottom: 5%;
+    }
+    /*  ? clientArea fin */
+
+    section.formArea{
+        position: relative; padding: 60px 0 0;
+        background-color: #efefef;
+    }
+    section.formArea .wrap{
+        width: 100%; max-width: 650px !important;
+    }
+    section.formArea .wrap ul{
+        background-color: white; width: 90%;
+        padding: 50px 5%;
+    }
+    section.formArea .wrap ul li{
+        display: block; width: 80%; box-sizing: border-box;
+        float: left; border-left: 8px solid #e2e2e2;
+        padding: 15px 5px 15px 10px; overflow: hidden;
+    }
+    section.formArea .wrap ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    section.formArea .wrap ul li *{
+        opacity: 0;
+    }
+    section.formArea .wrap ul li.active *{
+        animation: horiLeftTransAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.formArea .wrap ul li h3{
+        font-size: 24px; color: #252525; margin-bottom: 6px;
+    }
+    section.formArea .wrap ul li span{
+        font-size: 12px; display: block;
+    }
+    section.formArea .wrap form fieldset{
+        position: relative;
+        background-color: #3f60fa; padding: 120px 3% 50px; box-sizing: border-box;
+    }
+    section.formArea .wrap form fieldset legend{
+        position: absolute; top: 35px; color: #fff;
+        font-size: 25px; line-height: 1.2; font-weight: 700;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"],
+    section.formArea .wrap form fieldset textarea{
+        padding: 12px 16px; border: 1px solid #fff; background-color: transparent;
+        width: 89%; color: #fff;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"]{
+        margin-bottom: 15px;
+    }
+    section.formArea .wrap form fieldset input:not([type="submit"])::placeholder,
+    section.formArea .wrap form fieldset textarea::placeholder{
+        color: #c2c2c2;
+    }
+    section.formArea .wrap form fieldset textarea{
+        height: 100px; margin-bottom: 30px; resize: none;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]{
+        display: none;
+    }
+    section.formArea .wrap form fieldset label{
+        color: #fff; padding-left: 40px; display: inline-block;
+        line-height: 50px;
+        background-image: url('../images/icon_nonCheck.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px 20px;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]:checked + label{
+        background-image: url('../images/icon_nonCheck.png'), url('../images/icon_check.png');
+        background-repeat: no-repeat;
+        background-position: left center, 3px center;
+        background-size: 20px 20px, 14px 14px;
+    }
+    section.formArea .wrap form fieldset label + a{
+        display: inline-block; margin-left: 7px; line-height: 50px;
+        color: white; text-decoration-line: underline;
+    }
+    section.formArea .wrap form fieldset button{
+        width: 40%; max-width: 170px; float: right; background-color: white;
+        border: 1px solid #000; font-weight: 500; font-size: 14px;
+        cursor: pointer;
+    }
+    section.formArea .wrap form fieldset button:after{
+        width: 100%; max-width: 170px;
+    }
+    /*  ? formArea fin */
+
+    section.contactArea{
+        background: linear-gradient(to bottom, #252525 5%, #fff 5%); padding-top: 40px;
+        margin-bottom: 5px;
+    }
+    section.contactArea.active{
+        animation: contactBgAni 0.75s ease-in-out;
+        background: linear-gradient(to bottom, #252525 10%, #fff 10%);
+    }
+    section.contactArea .wrap h2{
+        color: white; margin-bottom: 50px;
+        opacity: 0; text-align: center;
+    }
+    section.contactArea .wrap h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul{
+        opacity: 0;
+    }
+    section.contactArea .wrap ul.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul li{
+        display: block; cursor: pointer;
+    }
+    section.contactArea .wrap ul li:not(:nth-last-child(1)){
+        margin-bottom: 30px;
+    }
+    section.contactArea .wrap ul li figure{
+        position: relative;
+        background-color: black;
+    }
+    section.contactArea .wrap ul li figure img{
+        width: 100%; display: block;
+    }
+    section.contactArea .wrap ul li figure span{
+        position: absolute; left: 0; display: block; text-align: center;
+        width: 100%;
+    }
+    section.contactArea .wrap ul li figure span,
+    section.contactArea .wrap ul li figure span a{
+        color: white; font-weight: 700; font-size: 18px;
+    }
+    section.contactArea .wrap ul li figure span:first-of-type{
+        line-height: 22px; top: 45%;
+    }
+    section.contactArea .wrap ul li figure span:last-of-type{
+        opacity: 0; top: 50%;
+    }
+    section.contactArea .wrap ul li figure span a:first-child{
+        margin-bottom: 5px;
+    }
+    section.contactArea .wrap ul li figure img,
+    section.contactArea .wrap ul li figure span{
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        transition-delay: 0.2s;
+    }
+    section.contactArea .wrap ul li:hover figure img{
+        opacity: 0.8;
+    }
+    section.contactArea .wrap ul li:hover figure span:first-of-type{
+        top: 35%;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        opacity: 1; top: 55%;
+    }
+    /*  ? contactArea fin */
+
+    
+    @keyframes videoH2Ani{
+        0%{
+            opacity: 0; top: 40vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes videoBtnAni{
+        0%{
+            opacity: 0; top: 71vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes vertiAni{
+        0%{
+            opacity: 0; transform: translateY(50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideActiveVertiAni{
+        0%{
+            opacity: 0; transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideNormalVertiAni{
+        0%{
+            opacity: 1; transform: translateY(0px);
+        }
+        100%{
+            opacity: 0; transform: translateY(50px);
+        }
+    }
+    
+    @keyframes horiAni{
+        0%{
+            opacity: 0; width: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes horiTransAni{
+        0%{
+            opacity: 0; transform: translateX(100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes horiLeftTransAni{
+        0%{
+            opacity: 0; transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitLeftTextAni{
+        0%{
+            opacity: 0; transform: translateX(70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitRightTextAni{
+        0%{
+            opacity: 0; transform: translateX(-70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes bgAni{
+        0%{
+            opacity: 0; background-size: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+/*  * mobile */
+
+
+@media screen and (min-width: 768px) and (max-width: 1004px){
+    section.videoArea{
+        width: 100%; padding-top: 720px;
+    }
+    section.videoArea video{
+        position: absolute; left: 0; top: 0; width: 100%; z-index: -1;
+        width: 1279px; height: 720px;
+    }
+    section.videoArea > div{
+        position: absolute; left: 0; top: 0; background-color: rgba(30,30,30,0.7);
+        width: 100%; height: 720px;
+    }
+    section.videoArea > div div{
+        max-width: 1279px; margin: 0 auto; position: relative;
+        
+    }
+    section.videoArea > div div > *{
+        color: white; position: absolute; left: 3%;
+    }
+    section.videoArea > div div h2{
+        top: 20vh; max-width: 728px; margin: 0 auto;
+        padding-right: 10%; box-sizing: border-box;
+        animation: videoH2Ani 0.5s ease-in-out;
+        font-size: 40px; line-height: 1.193;
+    }
+    section.videoArea > div div a{
+        top: 50vh; background-color: #3f60fa; font-weight: 700;
+        font-size: 14px; line-height: 50px; text-align: center;
+        min-width: 240px;
+        animation: videoBtnAni 0.5s ease-in-out;
+    }
+    section.videoArea > div div a:hover{
+        background-color: #2642f9;
+    }
+    section.videoArea > div div a:after{
+        min-width: 240px;
+    }
+    /* ? videoArea fin */
+    
+    section.setupArea{
+        background-color: #3f60fa; color: white;
+    }
+    section.setupArea *{
+        opacity: 0;
+    }
+    section.setupArea.active *{
+        opacity: 1;
+        animation: vertiAni 0.5s ease-in-out;
+    }
+    section.setupArea > div{
+        padding: 70px 0 90px;
+        display: flex; justify-content: space-between;
+    }
+    section.setupArea > div h2{
+        width: 46%; box-sizing: border-box;
+        max-width: 600px; padding: 0 2%;
+    }
+    section.setupArea > div p{
+        font-size: 14px; width: 50%; padding-top: 15px;
+        line-height: 22px; max-width: 650px; margin-left: 3%;
+    }
+    /*  ? setupArea fin */
+    
+    section.weWorkArea{
+        padding-top: 420px;
+        position: relative;
+    }
+    section.weWorkArea *:not(li){
+        opacity: 0;
+    }
+    section.weWorkArea.active *:not(li){
+        opacity: 1;
+    }
+    section.weWorkArea > div h2{
+        margin-bottom: 15px; animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div p{
+        font-size: 14px; line-height: 22px; max-width: 600px; margin-bottom: 30px;
+        width: 80%; animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div ul{
+        width: 100%; position: relative; z-index: 10; padding-bottom: 50px;
+    }
+    section.weWorkArea > div ul.active li{
+        animation: bgAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.weWorkArea > div ul li{
+        display: block; float: left; width: 22.75%; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        background-size: 117.5px; padding: 10% 0 0;
+        opacity: 0;
+    }
+    section.weWorkArea > div ul li:nth-child(-n+4){
+        margin-bottom: 50px;
+    }
+    section.weWorkArea > div ul li:not(:nth-child(4n+1)){
+        margin-left: 2%;
+    }
+    section.weWorkArea > div ul li:nth-child(1){
+        background-image: url('../images/logo_Samsung.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(2){
+        background-image: url('../images/logo_kia.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(3){
+        background-image: url('../images/logo_Zeiss.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(4){
+        background-image: url('../images/logo_ikea.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(5){
+        background-image: url('../images/logo_Louis_Vuitton.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(6){
+        background-image: url('../images/logo_auchan.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(7){
+        background-image: url('../images/logo_canon.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(8){
+        background-image: url('../images/logo_Stihl.svg');
+    }
+    section.weWorkArea > div .imgBox{
+        width: 94%; position: absolute; left: 3%; top: -50px;
+        z-index: 1; max-width: 940px; max-height: 440px; height: 80%;
+        overflow: hidden; background-color: #000;
+    }
+    section.weWorkArea.active > div .imgBox{
+        animation-delay: 0.75s;
+        animation: horiAni 1s ease-in-out;
+    }
+    section.weWorkArea.active > div .imgBox img{
+        animation-delay: 2s; width: 100%;
+        animation: horiTransAni 1.8s ease-in-out;
+    }
+    /*  ? weWorkArea fin */
+
+    section.howWorkArea{
+        background-color: #efefef;  position: relative;
+        padding-top: 50px; padding-bottom: 100px;
+    }
+    section.howWorkArea h2,
+    section.howWorkArea p,
+    section.howWorkArea ul li > span *{
+        opacity: 0;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        opacity: 1;
+    }
+    section.howWorkArea > div h2{
+        margin-bottom: 15px;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        animation: vertiAni 0.75s ease-in-out;
+    }
+    section.howWorkArea > div > p{
+        font-size: 14px; max-width: 450px;
+        line-height: 22px; margin-bottom: 55px;
+    }
+    section.howWorkArea > div ul{
+        border-bottom: 2px solid #000; 
+        position: relative; height: 112px;
+    }
+    section.howWorkArea > div ul li{
+        width: 25%; float: left; display: block; position: relative;
+        padding: 0 20px; height: 92px; box-sizing: border-box;
+    }
+    section.howWorkArea > div ul li::before{
+        content: ''; width: 10px; height: 112px; background-color: #dbdbdb;
+        display: block; position: absolute; top: 0; left: 0;
+    }
+    section.howWorkArea > div ul li::after{
+        content: ''; width: 10px; height: 10px; background-color: #000;
+        display: block; position: absolute; bottom: -31px; left: 0;
+    }
+    section.howWorkArea > div ul li > span,
+    section.howWorkArea > div ul li > span *{
+        display: block;
+    }
+    section.howWorkArea > div ul li > span{
+        overflow: hidden;
+    }
+    section.howWorkArea > div ul li > span strong{
+        font-size: 38px; margin-bottom: 5px;
+    }
+    section.howWorkArea > div ul li > span span{
+        line-height: 20px; font-size: 14px;
+    }
+    section.howWorkArea > div ul.active li > span *{
+        width: 100%; opacity: 1;
+        animation: horiLeftTransAni 1s ease-in-out;
+    }
+    /*  ? howWorkArea fin */
+
+    section.takeCareArea{
+        background-color: #252525; padding-top: 80px; padding-bottom: 200px;
+        color: white;
+    }
+    section.takeCareArea h2{
+        margin-bottom: 55px;
+        opacity: 0;
+    }
+    section.takeCareArea.active h2{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.takeCareArea ul li{
+        float: left; width: 49%; display: block;
+    }
+    section.takeCareArea ul li:nth-child(2n){
+        margin-left: 2%;
+    }
+    section.takeCareArea ul li:not(:nth-last-child(1)){
+        margin-bottom: 40px;
+    }
+    section.takeCareArea ul li:after{
+        content: ''; display: block; clear: both;
+    }
+    section.takeCareArea ul li span{
+        float: left; display: block;
+    }
+    section.takeCareArea ul li span:first-child{
+        background-size: 50%; background-repeat: no-repeat;
+        background-position: center; text-indent: -9999px;
+        background-color: white; min-width: 80px; width: 9vw;
+        min-height: 80px; line-height: 9vw;
+    }
+    section.takeCareArea ul li:nth-child(1) span:first-child{
+        background-image: url('../images/icon-1.svg');
+    }    
+    section.takeCareArea ul li:nth-child(2) span:first-child{
+        background-image: url('../images/icon-2.svg');
+    }
+    section.takeCareArea ul li:nth-child(3) span:first-child{
+        background-image: url('../images/icon-3.svg');
+    }
+    section.takeCareArea ul li:nth-child(4) span:first-child{
+        background-image: url('../images/icon-4.svg');
+    }
+    section.takeCareArea ul li:nth-child(5) span:first-child{
+        background-image: url('../images/icon-5.svg');
+    }
+    section.takeCareArea ul li:nth-child(6) span:first-child{
+        background-image: url('../images/icon-6.svg');
+    }
+    section.takeCareArea ul li:nth-child(7) span:first-child{
+        background-image: url('../images/icon-7.svg');
+    }
+    section.takeCareArea ul li:nth-child(8) span:first-child{
+        background-image: url('../images/icon-8.svg');
+    }
+    section.takeCareArea ul li:nth-child(9) span:first-child{
+        background-image: url('../images/icon-9.svg');
+    }
+    section.takeCareArea ul li span:last-child{
+        font-weight: 500; margin-left: 5%;
+        line-height: 9vw; overflow: hidden; opacity: 0;
+        font-size: 14px; width: 60%;
+    }
+    section.takeCareArea ul li span.active{
+        opacity: 1;
+        animation: horiLeftTransAni 0.75s ease-in-out;
+    }
+    /*  ? takeCareArea fin */
+
+    section.advantageArea{
+        position: relative; max-width: 1440px; margin: 0 auto;
+        height: 1px;
+    }
+    section.advantageArea div *{
+        opacity: 0;
+    }
+    section.advantageArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.advantageArea > div{
+        position: absolute; left: 3%; top: -130px; width: 94%;
+        text-align: center; padding: 50px 0 70px; 
+        background: url('../images/highlight-bg.jpg') no-repeat left top / cover;
+        
+    }
+    section.advantageArea > div h3{
+        font-size: 28px; color: white; line-height: 35px;
+        margin-bottom: 30px;
+    }
+    section.advantageArea > div > a.hoverBtn{
+        background-color: white; max-width: 240px; color: #000;
+        margin: 0 auto; font-size: 14px; font-weight: 700;
+    }
+    section.advantageArea > div > a.hoverBtn:after{
+        max-width: 240px; width: 100%;
+    }
+    /*  ? advantageArea fin */
+
+    section.benefitsArea{
+        background-color: #efefef; padding: 180px 0 50px;
+    }
+    section.benefitsArea h2{
+        margin: 0 auto 50px; padding-left: 3%; max-width: 1440px;
+        opacity: 0;
+    }
+    section.benefitsArea h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li{
+        position: relative; display: block; min-height: 200px;
+        max-height: 250px; height: 21vw; 
+    }
+    section.benefitsArea ul li figure .imgBox{
+        width: 50%; min-height: 200px; max-height: 250px; height: 21vw;
+        overflow: hidden;
+    }
+    section.benefitsArea ul li.imgRtxtL figure .imgBox{
+        float: right;
+    }
+    section.benefitsArea ul li figure .imgBox img{
+        width: 100%; height: 100%; opacity: 0;
+    }
+    section.benefitsArea ul li.active figure .imgBox img{
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure img{
+        animation: horiLeftTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure img{
+        animation: horiTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li figure figcaption{
+        position: absolute; background-color: white; width: 50%;
+        top: 3vw; max-width: 770px; opacity: 0;
+    }
+    section.benefitsArea ul li.imgRtxtL figure figcaption{
+        right: 45%;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure figcaption{
+        animation: benefitLeftTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgLtxtR figure figcaption{
+        left: 45%;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure figcaption{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li figure figcaption dl{
+        padding: 20px 5%;
+    }
+    section.benefitsArea ul li figure figcaption dl dt{
+        font-weight: 700; font-size: 15px; margin-bottom: 10px;
+    }
+    section.benefitsArea ul li figure figcaption dl dd{
+        font-size: 14px; line-height: 23px;
+    }
+    /*  ? benefitsArea fin */
+    
+    .awardArea{
+        background-color: #3f60fA; padding: 30px 0; opacity: 0;
+    }
+    .awardArea.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    .awardArea div{
+        max-width: 950px; margin: 0 auto;
+    }
+    .awardArea div ul li{
+        display: block; width: 33.33%; float: left; text-indent: -9999px;
+        line-height: 120px; background-position: center; background-repeat: no-repeat;
+        background-size: auto 100px; padding: 25px 0;
+    }
+    .awardArea div ul li:nth-child(1){background-image: url('../images/award-1.svg');}
+    .awardArea div ul li:nth-child(2){background-image: url('../images/award-2.svg');}
+    .awardArea div ul li:nth-child(3){background-image: url('../images/award-3.svg');}
+    .awardArea div ul li:nth-child(4){background-image: url('../images/award-4.svg');}
+    .awardArea div ul li:nth-child(5){background-image: url('../images/award-5.svg');}
+    .awardArea div ul li:nth-child(6){background-image: url('../images/award-6.svg');}
+    /*  ? awardArea fin */
+
+    section.ddtCaseArea{
+        background-color: #252525; color: white;
+        padding-top: 50px; padding-bottom: 65px;
+    }
+    section.ddtCaseArea div *{
+        opacity: 0;
+    }
+    section.ddtCaseArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.ddtCaseArea div h2{
+        margin-bottom: 30px;
+    }
+    section.ddtCaseArea div p{
+        font-size: 14px; line-height: 20px; max-width: 810px;
+    }
+    /*  ? ddtCaseArea fin */
+
+    section.auchanArea{
+        position: relative; background-color: #f2f2f2;
+        padding: 0;
+    }
+    section.auchanArea ul{
+        height: 900px;
+    }
+    section.auchanArea ul li{
+        display: block; position: relative;
+        background-color: white; box-sizing: border-box;
+        opacity: 0;
+    }
+    section.auchanArea ul li:first-child{
+        height: 44.5%;
+    }
+    section.auchanArea.active ul li:first-child{
+        animation: horiTransAni 1s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child{
+        height: 400px; width: 98%; margin-left: auto;
+    }
+    section.auchanArea.active ul li:last-child{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li div{
+        position: absolute;
+    }
+    section.auchanArea ul li:first-child div{
+        width: 100%; right: 0; top: 0; overflow: hidden;
+        background-color: #f2f2f2; height: 400px;
+    }
+    section.auchanArea ul li:first-child div.active{
+        z-index: 2;
+    }
+    section.auchanArea ul li:first-child div.active img{
+        animation: horiTransAni 0.75s ease-in-out;
+    }
+    section.auchanArea ul li:first-child div img{
+        width: 100%; height: auto;
+    }
+    section.auchanArea ul li:last-child div{
+        width: 96%; background-color: white;
+        padding: 30px 2%; height: 330px;
+        z-index: 10;
+    }
+    section.auchanArea ul li:last-child div.active{
+        z-index: 20;
+    }
+    section.auchanArea ul li:last-child div *{
+        opacity: 0; 
+    }
+    section.auchanArea ul li:last-child div.active *{
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child div h3{
+        font-size: 32px; margin-bottom: 50px;
+    }
+    section.auchanArea ul li:last-child div p{
+        font-size: 14px; line-height: 25px; color: #252525;
+    }
+    section.auchanArea ul li:last-child div p:not(:last-child){
+        margin-bottom: 15px;
+    }
+    section.auchanArea .slideBtn{
+        background-color: #000; position: absolute;
+        top: 370px; right: 0;
+    }
+    section.auchanArea .slideBtn *{
+        color: white;
+    }
+    section.auchanArea .slideBtn button::before{
+        background-color: white;
+    }
+    /*  ? auchanArea fin */
+
+    section.clientArea{
+        position: relative; width: 98%;
+    }
+    section.clientArea > .hBox{
+        background-color: #252525; color: white; 
+        padding: 25px 0 25px 3%;
+        width: 100%; box-sizing: border-box;
+    }
+    section.clientArea > .hBox h2{
+        max-width: 110px; opacity: 0;
+    }
+    section.clientArea > .hBox h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1; 
+    }
+    section.clientArea .slideBox ul{
+        position: relative; height: 340px; padding-bottom: 80px;
+        background-color: white;
+
+    }
+    section.clientArea .slideBox ul li{
+        position: absolute; background-color: #fff;
+        display: block; width: 100%; box-sizing: border-box;
+        padding: 50px 5% 0; height: 300px;
+    }
+    section.clientArea .slideBox ul li{
+        z-index: 1; opacity: 0;
+    }
+    section.clientArea .slideBox ul li.active{
+        z-index: 10; opacity: 1;
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+    }
+    section.clientArea .slideBox ul li h3{
+        font-size: 24px; font-weight: 500; margin-bottom: 7px;
+    }
+    section.clientArea .slideBox ul li strong{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.clientArea .slideBox ul li strong,
+    section.clientArea .slideBox ul li small{
+        display: block; font-size: 14px;
+    }
+    section.clientArea .slideBox ul li small{
+        color: #9c9c9c; margin-bottom: 30px;
+    }
+    section.clientArea .slideBox ul li p{
+        color: #252525; font-size: 14px; line-height: 24px;
+    }
+    section.clientArea .slideBox > ul li a{
+        position: absolute; right: 5%; top: 50px;
+        background-repeat: no-repeat; background-size: contain;
+        background-position: center; width: 127px; line-height: 70px;
+        text-indent: -9999px;
+    }
+    section.clientArea .slideBox ul li:nth-child(1) a{
+        background-image: url('../images/logo_auchan.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(2) a{
+        background-image: url('../images/logo_switchback.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(3) a{
+        background-image: url('../images/logo_vista.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(4) a{
+        background-image: url('../images/logo_appyventures.webp');
+    }
+    section.clientArea .slideBtn{
+        position: absolute; left: 40%; bottom: 5%;
+    }
+    /*  ? clientArea fin */
+
+    section.formArea{
+        position: relative; padding: 60px 0 0;
+        background-color: #efefef;
+    }
+    section.formArea .wrap{
+        width: 100%; max-width: 1050px !important;
+    }
+    section.formArea .wrap ul{
+        background-color: white; width: 94%;
+        padding: 50px 3%;
+    }
+    section.formArea .wrap ul li{
+        display: block; width: 33.33%; box-sizing: border-box;
+        float: left; border-left: 8px solid #e2e2e2;
+        padding: 15px 10px 15px 35px; overflow: hidden;
+    }
+    section.formArea .wrap ul li:nth-child(-n+3){
+        margin-bottom: 50px;
+    }
+    section.formArea .wrap ul li *{
+        opacity: 0;
+    }
+    section.formArea .wrap ul li.active *{
+        animation: horiLeftTransAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.formArea .wrap ul li h3{
+        font-size: 40px; color: #252525; margin-bottom: 6px;
+    }
+    section.formArea .wrap ul li span{
+        font-size: 14px; display: block;
+    }
+    section.formArea .wrap form fieldset{
+        position: relative;
+        background-color: #3f60fa; padding: 140px 3% 50px; box-sizing: border-box;
+    }
+    section.formArea .wrap form fieldset legend{
+        position: absolute; top: 35px; color: #fff;
+        font-size: 32px; line-height: 1.2; font-weight: 700;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"],
+    section.formArea .wrap form fieldset textarea{
+        padding: 12px 16px; border: 1px solid #fff; background-color: transparent;
+        width: 95%; color: #fff;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"]{
+        margin-bottom: 15px;
+    }
+    section.formArea .wrap form fieldset input:not([type="submit"])::placeholder,
+    section.formArea .wrap form fieldset textarea::placeholder{
+        color: #c2c2c2;
+    }
+    section.formArea .wrap form fieldset textarea{
+        height: 100px; margin-bottom: 30px; resize: none;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]{
+        display: none;
+    }
+    section.formArea .wrap form fieldset label{
+        color: #fff; padding-left: 40px; display: inline-block;
+        line-height: 50px;
+        background-image: url('../images/icon_nonCheck.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px 20px;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]:checked + label{
+        background-image: url('../images/icon_nonCheck.png'), url('../images/icon_check.png');
+        background-repeat: no-repeat;
+        background-position: left center, 3px center;
+        background-size: 20px 20px, 14px 14px;
+    }
+    section.formArea .wrap form fieldset label + a{
+        display: inline-block; margin-left: 7px; line-height: 50px;
+        color: white; text-decoration-line: underline;
+    }
+    section.formArea .wrap form fieldset button{
+        width: 40%; max-width: 170px; float: right; background-color: white;
+        border: 1px solid #000; font-weight: 500; font-size: 14px;
+        cursor: pointer;
+    }
+    section.formArea .wrap form fieldset button:after{
+        width: 100%; max-width: 170px;
+    }
+    /*  ? formArea fin */
+
+    section.contactArea{
+        background: linear-gradient(to bottom, #252525 5%, #fff 5%); padding-top: 70px;
+        margin-bottom: 25px;
+    }
+    section.contactArea.active{
+        animation: contactBgAni 0.75s ease-in-out;
+        background: linear-gradient(to bottom, #252525 20%, #fff 20%);
+    }
+    section.contactArea .wrap h2{
+        color: white; margin-bottom: 50px;
+        opacity: 0;
+    }
+    section.contactArea .wrap h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul{
+        opacity: 0;
+    }
+    section.contactArea .wrap ul.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul li{
+        display: block; width: 49%; float: left; cursor: pointer;
+    }
+    section.contactArea .wrap ul li:nth-child(2n){
+        margin-left: 2%;
+    }
+    section.contactArea .wrap ul li:not(:nth-last-child(-n+2)){
+        margin-bottom: 30px;
+    }
+    section.contactArea .wrap ul li figure{
+        position: relative;
+        background-color: black;
+    }
+    section.contactArea .wrap ul li figure img{
+        width: 100%; display: block;
+    }
+    section.contactArea .wrap ul li figure span{
+        position: absolute; left: 0; display: block; text-align: center;
+        width: 100%;
+    }
+    section.contactArea .wrap ul li figure span,
+    section.contactArea .wrap ul li figure span a{
+        color: white; font-weight: 700; font-size: 21px;
+    }
+    section.contactArea .wrap ul li figure span:first-of-type{
+        /* opacity: 0; */ line-height: 28px; top: 45%;
+    }
+    section.contactArea .wrap ul li figure span:last-of-type{
+        opacity: 0; top: 50%;
+    }
+    section.contactArea .wrap ul li figure span a:first-child{
+        margin-bottom: 5px;
+    }
+    section.contactArea .wrap ul li figure img,
+    section.contactArea .wrap ul li figure span{
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        transition-delay: 0.2s;
+    }
+    section.contactArea .wrap ul li:hover figure img{
+        opacity: 0.8;
+    }
+    section.contactArea .wrap ul li:hover figure span:first-of-type{
+        top: 35%;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        opacity: 1; top: 55%;
+    }
+    /*  ? contactArea fin */
+
+    
+    @keyframes videoH2Ani{
+        0%{
+            opacity: 0; top: 40vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes videoBtnAni{
+        0%{
+            opacity: 0; top: 71vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes vertiAni{
+        0%{
+            opacity: 0; transform: translateY(50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideActiveVertiAni{
+        0%{
+            opacity: 0; transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideNormalVertiAni{
+        0%{
+            opacity: 1; transform: translateY(0px);
+        }
+        100%{
+            opacity: 0; transform: translateY(50px);
+        }
+    }
+    
+    @keyframes horiAni{
+        0%{
+            opacity: 0; width: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes horiTransAni{
+        0%{
+            opacity: 0; transform: translateX(100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes horiLeftTransAni{
+        0%{
+            opacity: 0; transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitLeftTextAni{
+        0%{
+            opacity: 0; transform: translateX(70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitRightTextAni{
+        0%{
+            opacity: 0; transform: translateX(-70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes bgAni{
+        0%{
+            opacity: 0; background-size: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+/*  * tablet */
+
+@media screen and (min-width: 1005px){
+    section.videoArea{
+        width: 100%; padding-top: 1080px;
+    }
+    section.videoArea h2{
+        font-size: 48px; line-height: 1.193;
+    }
+    section.videoArea video{
+        position: absolute; left: 0; top: 0; width: 100%; z-index: -1;
+        width: 1920px; height: 1080px;
+    }
+    section.videoArea > div{
+        position: absolute; left: 0; top: 0; background-color: rgba(30,30,30,0.7);
+        width: 100%; height: 1080px;
+    }
+    section.videoArea > div div{
+        max-width: 1440px; margin: 0 auto; position: relative;
+        
+    }
+    section.videoArea > div div > *{
+        color: white; position: absolute; left: 3%;
+    }
+    section.videoArea > div div h2{
+        top: 35vh; max-width: 1440px; margin: 0 auto;
+        padding-right: 40%; box-sizing: border-box;
+        animation: videoH2Ani 0.5s ease-in-out;
+    }
+    section.videoArea > div div a{
+        top: 66vh; background-color: #3f60fa; font-weight: 700;
+        font-size: 14px; line-height: 50px; text-align: center;
+        min-width: 240px;
+        animation: videoBtnAni 0.5s ease-in-out;
+    }
+    section.videoArea > div div a:hover{
+        background-color: #2642f9;
+    }
+    section.videoArea > div div a:after{
+        min-width: 240px;
+    }
+    /* ? videoArea fin */
+    
+    section.setupArea{
+        background-color: #3f60fa; color: white;
+    }
+    section.setupArea *{
+        opacity: 0;
+    }
+    section.setupArea.active *{
+        opacity: 1;
+        animation: vertiAni 0.5s ease-in-out;
+    }
+    section.setupArea > div{
+        padding: 100px 0 120px;
+        display: flex; justify-content: space-between;
+    }
+    section.setupArea > div h2{
+        width: 50%; box-sizing: border-box;
+        max-width: 600px;
+    }
+    section.setupArea > div p{
+        font-size: 14px; width: 50%; padding-top: 35px;
+        line-height: 22px; max-width: 650px; margin-left: 3%;
+    }
+    /*  ? setupArea fin */
+    
+    section.weWorkArea{
+        padding-top: 90px;
+        position: relative;
+    }
+    section.weWorkArea *:not(li){
+        opacity: 0;
+    }
+    section.weWorkArea.active *:not(li){
+        opacity: 1;
+    }
+    section.weWorkArea > div h2{
+        margin-bottom: 15px; animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div p{
+        font-size: 14px; line-height: 22px; max-width: 630px; margin-bottom: 30px;
+        width: 43%; animation: vertiAni 0.5s ease-in-out;
+    }
+    section.weWorkArea > div ul{
+        width: 50%; position: relative; z-index: 10; padding-bottom: 50px;
+    }
+    section.weWorkArea > div ul.active li{
+        animation: bgAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.weWorkArea > div ul li{
+        display: block; float: left; width: 22.75%; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+        background-size: 80%; padding: 10% 0 0;
+        opacity: 0;
+    }
+    section.weWorkArea > div ul li:nth-child(-n+4){
+        margin-bottom: 50px;
+    }
+    section.weWorkArea > div ul li:not(:nth-child(4n+1)){
+        margin-left: 2%;
+    }
+    section.weWorkArea > div ul li:nth-child(1){
+        background-image: url('../images/logo_Samsung.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(2){
+        background-image: url('../images/logo_kia.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(3){
+        background-image: url('../images/logo_Zeiss.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(4){
+        background-image: url('../images/logo_ikea.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(5){
+        background-image: url('../images/logo_Louis_Vuitton.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(6){
+        background-image: url('../images/logo_auchan.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(7){
+        background-image: url('../images/logo_canon.svg');
+    }
+    section.weWorkArea > div ul li:nth-child(8){
+        background-image: url('../images/logo_Stihl.svg');
+    }
+    section.weWorkArea > div .imgBox{
+        width: 47%; position: absolute; right: 3%; top: -90px;
+        z-index: 1; max-width: 720px; max-height: 720px; height: 135%;
+        overflow: hidden; background-color: #000;
+    }
+    section.weWorkArea.active > div .imgBox{
+        animation-delay: 0.75s;
+        animation: horiAni 1s ease-in-out;
+    }
+    section.weWorkArea.active > div .imgBox img{
+        animation-delay: 2s;
+        animation: horiTransAni 1.8s ease-in-out;
+    }
+    /*  ? weWorkArea fin */
+
+    section.howWorkArea{
+        background-color: #efefef;  position: relative;
+        padding-top: 90px; padding-bottom: 100px;
+    }
+    section.howWorkArea h2,
+    section.howWorkArea p,
+    section.howWorkArea ul li > span *{
+        opacity: 0;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        opacity: 1;
+    }
+    section.howWorkArea > div h2{
+        margin-bottom: 15px;
+    }
+    section.howWorkArea.active > div h2,
+    section.howWorkArea.active > div p{
+        animation: vertiAni 0.75s ease-in-out;
+    }
+    section.howWorkArea > div > p{
+        font-size: 14px; max-width: 425px;
+        line-height: 22px; margin-bottom: 55px;
+    }
+    section.howWorkArea > div ul{
+        border-bottom: 2px solid #000; 
+        position: relative; height: 112px;
+    }
+    section.howWorkArea > div ul li{
+        width: 25%; float: left; display: block; position: relative;
+        padding: 0 50px; height: 92px; box-sizing: border-box;
+    }
+    section.howWorkArea > div ul li::before{
+        content: ''; width: 15px; height: 112px; background-color: #dbdbdb;
+        display: block; position: absolute; top: 0; left: 0;
+    }
+    section.howWorkArea > div ul li::after{
+        content: ''; width: 15px; height: 15px; background-color: #000;
+        display: block; position: absolute; bottom: -36px; left: 0;
+    }
+    section.howWorkArea > div ul li > span,
+    section.howWorkArea > div ul li > span *{
+        display: block;
+    }
+    section.howWorkArea > div ul li > span{
+        overflow: hidden;
+    }
+    section.howWorkArea > div ul li > span strong{
+        font-size: 48px; margin-bottom: 5px;
+    }
+    section.howWorkArea > div ul li > span span{
+        line-height: 20px;
+    }
+    section.howWorkArea > div ul.active li > span *{
+        width: 100%; opacity: 1;
+        animation: horiLeftTransAni 1s ease-in-out;
+    }
+    /*  ? howWorkArea fin */
+
+    section.takeCareArea{
+        background-color: #252525; padding-top: 80px; padding-bottom: 280px;
+        color: white;
+    }
+    section.takeCareArea h2{
+        margin-bottom: 55px;
+        opacity: 0;
+    }
+    section.takeCareArea.active h2{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.takeCareArea ul li{
+        float: left; width: 32%; display: block;
+    }
+    section.takeCareArea ul li:not(:nth-child(3n+1)){
+        margin-left: 2%;
+    }
+    section.takeCareArea ul li:not(:nth-last-child(-n+3)){
+        margin-bottom: 40px;
+    }
+    section.takeCareArea ul li:after{
+        content: ''; display: block; clear: both;
+    }
+    section.takeCareArea ul li span{
+        float: left; display: block;
+    }
+    section.takeCareArea ul li span:first-child{
+        background-size: 50%; background-repeat: no-repeat;
+        background-position: center; text-indent: -9999px;
+        background-color: white; min-width: 80px; width: 9vw;
+        min-height: 80px; line-height: 9vw;
+    }
+    section.takeCareArea ul li:nth-child(1) span:first-child{
+        background-image: url('../images/icon-1.svg');
+    }    
+    section.takeCareArea ul li:nth-child(2) span:first-child{
+        background-image: url('../images/icon-2.svg');
+    }
+    section.takeCareArea ul li:nth-child(3) span:first-child{
+        background-image: url('../images/icon-3.svg');
+    }
+    section.takeCareArea ul li:nth-child(4) span:first-child{
+        background-image: url('../images/icon-4.svg');
+    }
+    section.takeCareArea ul li:nth-child(5) span:first-child{
+        background-image: url('../images/icon-5.svg');
+    }
+    section.takeCareArea ul li:nth-child(6) span:first-child{
+        background-image: url('../images/icon-6.svg');
+    }
+    section.takeCareArea ul li:nth-child(7) span:first-child{
+        background-image: url('../images/icon-7.svg');
+    }
+    section.takeCareArea ul li:nth-child(8) span:first-child{
+        background-image: url('../images/icon-8.svg');
+    }
+    section.takeCareArea ul li:nth-child(9) span:first-child{
+        background-image: url('../images/icon-9.svg');
+    }
+    section.takeCareArea ul li span:last-child{
+        font-weight: 500; margin-left: 5%;
+        overflow: hidden; opacity: 0;
+        width: 50%; line-height: 1.2; padding-top: 3.5vw;
+    }
+    section.takeCareArea ul li span.active{
+        opacity: 1;
+        animation: horiLeftTransAni 0.75s ease-in-out;
+    }
+    /*  ? takeCareArea fin */
+
+    section.advantageArea{
+        position: relative; max-width: 1440px; margin: 0 auto;
+        height: 1px;
+    }
+    section.advantageArea div *{
+        opacity: 0;
+    }
+    section.advantageArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.advantageArea > div{
+        position: absolute; left: 3%; top: -180px; width: 94%;
+        text-align: center; padding: 80px 0 100px; 
+        background: url('../images/highlight-bg.jpg') no-repeat left top / cover;
+        
+    }
+    section.advantageArea > div h3{
+        font-size: 40px; color: white; line-height: 55px;
+        margin-bottom: 30px;
+    }
+    section.advantageArea > div > a.hoverBtn{
+        background-color: white; max-width: 240px; color: #000;
+        margin: 0 auto; font-size: 14px; font-weight: 700;
+    }
+    section.advantageArea > div > a.hoverBtn:after{
+        max-width: 240px; width: 100%;
+    }
+    /*  ? advantageArea fin */
+
+    section.benefitsArea{
+        background-color: #efefef; padding: 310px 0 80px;
+    }
+    section.benefitsArea h2{
+        margin: 0 auto 50px; padding-left: 3%; max-width: 1440px;
+        opacity: 0;
+    }
+    section.benefitsArea h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li{
+        position: relative; display: block; min-height: 300px;
+        max-height: 400px; height: 21vw; 
+    }
+    section.benefitsArea ul li figure .imgBox{
+        width: 50%; min-height: 300px; max-height: 400px; height: 21vw;
+        overflow: hidden;
+    }
+    section.benefitsArea ul li.imgRtxtL figure .imgBox{
+        float: right;
+    }
+    section.benefitsArea ul li figure .imgBox img{
+        width: 100%; height: 100%; opacity: 0;
+    }
+    section.benefitsArea ul li.active figure .imgBox img{
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure img{
+        animation: horiLeftTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure img{
+        animation: horiTransAni 1.5s ease-in-out;
+    }
+    section.benefitsArea ul li figure figcaption{
+        position: absolute; background-color: white; width: 50%;
+        top: 3vw; max-width: 770px; opacity: 0;
+    }
+    section.benefitsArea ul li.imgRtxtL figure figcaption{
+        right: 45%;
+    }
+    section.benefitsArea ul li.imgRtxtL.active figure figcaption{
+        animation: benefitLeftTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li.imgLtxtR figure figcaption{
+        left: 45%;
+    }
+    section.benefitsArea ul li.imgLtxtR.active figure figcaption{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.benefitsArea ul li figure figcaption dl{
+        padding: 60px 10%;
+    }
+    section.benefitsArea ul li figure figcaption dl dt{
+        font-weight: 700; font-size: 18px; margin-bottom: 28px;
+    }
+    section.benefitsArea ul li figure figcaption dl dd{
+        font-size: 14px; line-height: 23px;
+    }
+    /*  ? benefitsArea fin */
+    
+    .awardArea{
+        background-color: #3f60fA; padding: 30px 0; opacity: 0;
+    }
+    .awardArea.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    .awardArea div{
+        max-width: 1480px; margin: 0 auto;
+    }
+    .awardArea div ul li{
+        display: block; width: 16.66%; float: left; text-indent: -9999px;
+        line-height: 120px; background-position: center; background-repeat: no-repeat;
+        background-size: auto 7.5vw; padding: 32px 0;
+    }
+    .awardArea div ul li:nth-child(1){background-image: url('../images/award-1.svg');}
+    .awardArea div ul li:nth-child(2){background-image: url('../images/award-2.svg');}
+    .awardArea div ul li:nth-child(3){background-image: url('../images/award-3.svg');}
+    .awardArea div ul li:nth-child(4){background-image: url('../images/award-4.svg');}
+    .awardArea div ul li:nth-child(5){background-image: url('../images/award-5.svg');}
+    .awardArea div ul li:nth-child(6){background-image: url('../images/award-6.svg');}
+    /*  ? awardArea fin */
+
+    section.ddtCaseArea{
+        background-color: #252525; color: white;
+        padding-top: 110px; padding-bottom: 65px;
+    }
+    section.ddtCaseArea div *{
+        opacity: 0;
+    }
+    section.ddtCaseArea.active div *{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.ddtCaseArea div h2{
+        margin-bottom: 30px;
+    }
+    section.ddtCaseArea div p{
+        font-size: 14px; line-height: 20px; max-width: 505px;
+    }
+    /*  ? ddtCaseArea fin */
+
+    section.auchanArea{
+        position: relative; background-color: #f2f2f2;
+        padding: 0;
+    }
+    section.auchanArea ul{
+        display: flex; flex-flow: row-reverse;
+        height: 900px;
+    }
+    section.auchanArea ul li{
+        display: block; position: relative;
+        background-color: white; box-sizing: border-box;
+        opacity: 0;
+    }
+    section.auchanArea ul li:first-child{
+        height: 50%; width: 122%;
+    }
+    section.auchanArea.active ul li:first-child{
+        animation: horiTransAni 1s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child{
+        height: 550px; width: 78%;
+        padding-left: 12.5%;
+    }
+    section.auchanArea.active ul li:last-child{
+        animation: benefitRightTextAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li div{
+        position: absolute;
+    }
+    section.auchanArea ul li:first-child div{
+        width: 100%; right: 0; top: -150px; overflow: hidden;
+        background-color: #f2f2f2;
+    }
+    section.auchanArea ul li:first-child div.active{
+        z-index: 2;
+    }
+    section.auchanArea ul li:first-child div.active img{
+        animation: horiTransAni 0.75s ease-in-out;
+    }
+    section.auchanArea ul li:first-child div img{
+        width: auto; height: 100%;
+    }
+    section.auchanArea ul li:last-child div{
+        width: 90%; background-color: white;
+        padding: 70px 10% 70px 0; height: 410px;
+        z-index: 10;
+    }
+    section.auchanArea ul li:last-child div.active{
+        z-index: 20;
+    }
+    section.auchanArea ul li:last-child div *{
+        opacity: 0; 
+    }
+    section.auchanArea ul li:last-child div.active *{
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.auchanArea ul li:last-child div h3{
+        font-size: 38px; margin-bottom: 50px;
+    }
+    section.auchanArea ul li:last-child div p{
+        font-size: 14px; line-height: 25px; color: #252525;
+    }
+    section.auchanArea ul li:last-child div p:not(:last-child){
+        margin-bottom: 30px;
+    }
+    section.auchanArea .slideBtn{
+        background-color: #000; position: absolute;
+        bottom: 350px; left: 50%;
+    }
+    section.auchanArea .slideBtn *{
+        color: white;
+    }
+    section.auchanArea .slideBtn button::before{
+        background-color: white;
+    }
+    /*  ? auchanArea fin */
+
+    section.clientArea{
+        padding-left: 12.5%; position: relative;
+        height: 100px;
+    }
+    section.clientArea > .hBox{
+        background-color: #252525; color: white; 
+        padding: 90px 7%; position: absolute; left: 12.5%; top: -100%;
+        width: 100%; box-sizing: border-box;
+    }
+    section.clientArea > .hBox h2{
+        max-width: 110px; opacity: 0;
+    }
+    section.clientArea > .hBox h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1; 
+    }
+    section.clientArea .slideBox{
+        position: absolute; width: 50%; right: 3%; top: -280%;
+    }
+    section.clientArea .slideBox ul{
+        position: relative; height: 360px; padding-bottom: 100px;
+        background-color: white;
+
+    }
+    section.clientArea .slideBox ul li{
+        position: absolute; background-color: #fff;
+        display: block; width: 100%; box-sizing: border-box;
+        padding: 50px 5% 0; height: 460px;
+    }
+    section.clientArea .slideBox ul li{
+        z-index: 1; opacity: 0;
+    }
+    section.clientArea .slideBox ul li.active{
+        z-index: 10; opacity: 1;
+        animation: slideActiveVertiAni 0.75s ease-in-out;
+    }
+    section.clientArea .slideBox ul li h3{
+        font-size: 24px; font-weight: 500; margin-bottom: 7px;
+    }
+    section.clientArea .slideBox ul li strong{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.clientArea .slideBox ul li strong,
+    section.clientArea .slideBox ul li small{
+        display: block; font-size: 14px;
+    }
+    section.clientArea .slideBox ul li small{
+        color: #9c9c9c; margin-bottom: 30px;
+    }
+    section.clientArea .slideBox ul li p{
+        color: #252525; font-size: 14px; line-height: 24px;
+    }
+    section.clientArea .slideBox > ul li a{
+        position: absolute; right: 5%; top: 50px;
+        background-repeat: no-repeat; background-size: contain;
+        background-position: center; width: 127px; line-height: 70px;
+        text-indent: -9999px;
+    }
+    section.clientArea .slideBox ul li:nth-child(1) a{
+        background-image: url('../images/logo_auchan.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(2) a{
+        background-image: url('../images/logo_switchback.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(3) a{
+        background-image: url('../images/logo_vista.webp');
+    }
+    section.clientArea .slideBox ul li:nth-child(4) a{
+        background-image: url('../images/logo_appyventures.webp');
+    }
+    section.clientArea .slideBtn{
+        position: absolute; right: 5%; bottom: 5%;
+    }
+    /*  ? clientArea fin */
+
+    section.formArea{
+        position: relative; padding-top: 170px; padding-bottom: 120px;
+    }
+    section.formArea .wrap ul{
+        width: 50%;
+    }
+    section.formArea .wrap ul li{
+        display: block; width: 50%; box-sizing: border-box;
+        float: left; border-left: 15px solid #e2e2e2;
+        padding: 15px 10px 15px 35px; overflow: hidden;
+    }
+    section.formArea .wrap ul li:not(:nth-last-child(-n+2)){
+        margin-bottom: 50px;
+    }
+    section.formArea .wrap ul li *{
+        opacity: 0;
+    }
+    section.formArea .wrap ul li.active *{
+        animation: horiLeftTransAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.formArea .wrap ul li h3{
+        font-size: 40px; color: #252525; margin-bottom: 6px;
+    }
+    section.formArea .wrap ul li span{
+        font-size: 14px; display: block;
+    }
+    section.formArea .wrap form fieldset{
+        position: absolute; right: 3%; top: 170px; width: 47%;
+        background-color: #3f60fa; padding: 140px 5% 80px; box-sizing: border-box;
+    }
+    section.formArea .wrap form fieldset legend{
+        position: absolute; top: 35px; color: #fff;
+        font-size: 32px; line-height: 1.2; font-weight: 700;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"],
+    section.formArea .wrap form fieldset textarea{
+        padding: 10px 16px; border: 1px solid #fff; background-color: transparent;
+        width: 93%; color: #fff;
+    }
+    section.formArea .wrap form fieldset input[type="text"],
+    section.formArea .wrap form fieldset input[type="email"]{
+        margin-bottom: 15px;
+    }
+    section.formArea .wrap form fieldset input:not([type="submit"])::placeholder,
+    section.formArea .wrap form fieldset textarea::placeholder{
+        color: #c2c2c2;
+    }
+    section.formArea .wrap form fieldset textarea{
+        height: 100px; margin-bottom: 30px; resize: none;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]{
+        display: none;
+    }
+    section.formArea .wrap form fieldset label{
+        color: #fff; padding-left: 40px; display: inline-block;
+        line-height: 50px;
+        background-image: url('../images/icon_nonCheck.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px 20px;
+    }
+    section.formArea .wrap form fieldset input[type="checkbox"]:checked + label{
+        background-image: url('../images/icon_nonCheck.png'), url('../images/icon_check.png');
+        background-repeat: no-repeat;
+        background-position: left center, 3px center;
+        background-size: 20px 20px, 14px 14px;
+    }
+    section.formArea .wrap form fieldset label + a{
+        display: inline-block; margin-left: 7px; line-height: 50px;
+        color: white; text-decoration-line: underline;
+    }
+    section.formArea .wrap form fieldset button{
+        width: 40%; max-width: 170px; float: right; background-color: white;
+        border: 1px solid #000; font-weight: 500; font-size: 14px;
+        cursor: pointer;
+    }
+    section.formArea .wrap form fieldset button:after{
+        width: 100%; max-width: 170px;
+    }
+    /*  ? formArea fin */
+
+    section.contactArea{
+        background: linear-gradient(to bottom, #252525 15%, #fff 15%); padding-top: 70px;
+        margin-bottom: 25px;
+    }
+    section.contactArea.active{
+        animation: contactBgAni 0.75s ease-in-out;
+        background: linear-gradient(to bottom, #252525 40%, #fff 40%);
+    }
+    section.contactArea .wrap h2{
+        color: white; margin-bottom: 50px;
+        opacity: 0;
+    }
+    section.contactArea .wrap h2.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul{
+        opacity: 0;
+    }
+    section.contactArea .wrap ul.active{
+        animation: vertiAni 0.75s ease-in-out;
+        opacity: 1;
+    }
+    section.contactArea .wrap ul li{
+        display: block; width: 32%; float: left; cursor: pointer;
+    }
+    section.contactArea .wrap ul li:not(:nth-child(3n+1)){
+        margin-left: 2%;
+    }
+    section.contactArea .wrap ul li:not(:nth-last-child(-n+3)){
+        margin-bottom: 30px;
+    }
+    section.contactArea .wrap ul li figure{
+        position: relative;
+        background-color: black;
+    }
+    section.contactArea .wrap ul li figure img{
+        width: 100%; display: block;
+    }
+    section.contactArea .wrap ul li figure span{
+        position: absolute; left: 0; display: block; text-align: center;
+        width: 100%;
+    }
+    section.contactArea .wrap ul li figure span,
+    section.contactArea .wrap ul li figure span a{
+        color: white; font-weight: 700; font-size: 21px;
+    }
+    section.contactArea .wrap ul li figure span:first-of-type{
+        /* opacity: 0; */ line-height: 28px; top: 45%;
+    }
+    section.contactArea .wrap ul li figure span:last-of-type{
+        opacity: 0; top: 50%;
+    }
+    section.contactArea .wrap ul li figure span a:first-child{
+        margin-bottom: 5px;
+    }
+    section.contactArea .wrap ul li figure img,
+    section.contactArea .wrap ul li figure span{
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        transition-delay: 0.2s;
+    }
+    section.contactArea .wrap ul li:hover figure img{
+        opacity: 0.8;
+    }
+    section.contactArea .wrap ul li:hover figure span:first-of-type{
+        top: 35%;
+    }
+    section.contactArea .wrap ul li:hover figure span:last-of-type{
+        opacity: 1; top: 55%;
+    }
+    /*  ? contactArea fin */
+
+    
+    @keyframes videoH2Ani{
+        0%{
+            opacity: 0; top: 40vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes videoBtnAni{
+        0%{
+            opacity: 0; top: 71vh;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes vertiAni{
+        0%{
+            opacity: 0; transform: translateY(50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideActiveVertiAni{
+        0%{
+            opacity: 0; transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1; transform: translateY(0px);
+        }
+    }
+    @keyframes slideNormalVertiAni{
+        0%{
+            opacity: 1; transform: translateY(0px);
+        }
+        100%{
+            opacity: 0; transform: translateY(50px);
+        }
+    }
+    
+    @keyframes horiAni{
+        0%{
+            opacity: 0; width: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes horiTransAni{
+        0%{
+            opacity: 0; transform: translateX(100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes horiLeftTransAni{
+        0%{
+            opacity: 0; transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitLeftTextAni{
+        0%{
+            opacity: 0; transform: translateX(70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes benefitRightTextAni{
+        0%{
+            opacity: 0; transform: translateX(-70px);
+        }
+        100%{
+            opacity: 1; transform: translateX(0px);
+        }
+    }
+    @keyframes bgAni{
+        0%{
+            opacity: 0; background-size: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+/*  * desktop */
