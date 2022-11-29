@@ -794,7 +794,7 @@
             opacity: 0; background-size: 0;
         }
         100%{
-            opacity: 1;
+            opacity: 1; background-size: 80%;
         }
     }
 }

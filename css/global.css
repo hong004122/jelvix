@@ -42,7 +42,7 @@ a{
     }
     header{
         padding: 0 5%; position: absolute; left: 0; top: 0;
-        z-index: 10; width: 90%;
+        z-index: 100; width: 90%;
     }
     header.fixed{
         position: fixed; background-color: #222; padding: 0 3% 0 2%;
@@ -251,7 +251,7 @@ a{
     }
     header{
         padding: 0 3%; position: absolute; left: 0; top: 0;
-        z-index: 10; width: 94%;
+        z-index: 100; width: 94%;
     }
     header, header h1, header h1 svg, header nav ul li{
         transition-duration: 0.2s;
@@ -290,7 +290,7 @@ a{
         background-color: #f2f2f2;
     } 
     header.fixed{
-        position: fixed; background-color: #222; padding: 0 3% 0 2%;
+        position: fixed; background-color: #222; padding: 0 3% 0 3%;
         width: 94%; z-index: 100;
     }
     header.fixed h1{
@@ -409,7 +409,7 @@ a{
     }
     header{
         padding: 0 3%; position: absolute; left: 0; top: 0;
-        z-index: 10; width: 94%;
+        z-index: 100; width: 94%;
     }
     header, header h1, header h1 svg, header nav ul li{
         transition-duration: 0.2s;
